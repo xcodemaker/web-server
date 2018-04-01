@@ -55,7 +55,14 @@ app.get('/about',(req,res)=>{
         pageTitle:'About page',
         
     });
-    });
+});
+
+app.get('/projects',(req,res)=>{
+    res.render('projects',{
+        pageTitle:'Projects'
+    })
+})
+
 app.get('/bad',(req,res)=>{
         //res.send('Hello Express');
         res.send({
